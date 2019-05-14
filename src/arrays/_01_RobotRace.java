@@ -19,6 +19,7 @@ for(int i=0; i<r.length;i++) {
 	r[i]=new Robot();
 	r[i].setX(200 + (i * 100));
 	r[i].setY(550);
+	r[i].setAngle(45);
 }
 		//4. make each robot start at the bottom of the screen, side by side, facing up
 
@@ -35,6 +36,7 @@ for(int i=0; i<r.length;i++) {
 	int y=random.nextInt(200);
 	r[i].move(y);
 	
+	
 	if(r[i].getY()<100) {
 		JOptionPane.showMessageDialog(null, "Someone won!!");
 	System.exit(0);
@@ -42,11 +44,14 @@ for(int i=0; i<r.length;i++) {
 }
 }
 	//6. use a while loop to repeat step 5 until a robot has reached the top of the screen.
-
+			//FINISHED
 	//7. declare that robot the winner and throw it a party!
-
+			//FINSHED
 	//8. try different races with different amounts of robots
-
+		//FINSHED
 	//9. make the robots race around a circular track.
+
+
+
 }
 }
