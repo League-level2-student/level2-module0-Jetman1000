@@ -40,15 +40,20 @@ for(int i=0;i<numbers.length;i++){
   //9. call the stepSort method
 stepSort(numbers);
   //10. extract the code that randomizes the array into a method.
-******public  randomArray(int [] arr){*******
+
+  //11. call the method you made in step 10 when the mouse is pressed
+if(mousePressed){
+  randomArray(numbers);
+}
+}
+
+//The answer to 10       |
+//                       V
+public void randomArray(int [] arr){
   for(int i=0;i<numbers.length;i++){
   numbers[i]=(int) random(height);
 }
 }
-  //11. call the method you made in step 10 when the mouse is pressed
-
-}
-
 void stepSort(int[] arr) {
   for (int i = 1; i < arr.length; i++) {
     if (arr[i - 1] > arr[i]) {
